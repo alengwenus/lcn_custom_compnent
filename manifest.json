@@ -6,6 +6,6 @@
   "documentation": "https://www.home-assistant.io/integrations/lcn",
   "iot_class": "local_push",
   "loggers": ["pypck"],
-  "requirements": ["pypck @ git+https://github.com/alengwenus/pypck.git@fix/send_keys"],
+  "requirements": [],
   "version": "1.0.0"
 }

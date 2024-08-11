@@ -4,7 +4,17 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from functools import partial
+import importlib.util
 import logging
+import os
+import sys
+
+spec = importlib.util.spec_from_file_location(
+    "pypck", os.path.join(os.path.dirname(__file__), "pypck", "pypck", "__init__.py")
+)
+module = importlib.util.module_from_spec(spec)
+sys.modules["pypck"] = module
+spec.loader.exec_module(module)
 
 import pypck
 

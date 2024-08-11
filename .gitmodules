@@ -1,0 +1,3 @@
+[submodule "pypck"]
+	path = pypck
+	url = https://github.com/alengwenus/pypck
